@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prompt Share
+
+Prompt Share is a web application developed using the Next.js framework, allowing users to share and discover AI prompts. With Prompt Share, users can share prompts from their profile and explore new prompts from the feed, where all the shared prompts are displayed.
+
+## Technologies Used
+
+- **Next.js**: Next.js is a React framework that enables server-side rendering, static site generation, and more for React-based web applications.
+- **MongoDB**: MongoDB is used as the database to store prompt data.
+- **Google Cloud Console**: Authentication is implemented using Google Cloud Console, providing secure user authentication and authorization.
+- **NextAuth.js**: NextAuth.js is used for authentication and session management.
+  
+## Features
+
+- **User Authentication**: Users can sign in securely using Google Cloud Console authentication.
+- **Prompt Sharing**: Users can share AI prompts from their profile.
+- **Prompt Discovery**: Users can explore new prompts from the feed, where all shared prompts are displayed.
 
 ## Getting Started
 
-First, run the development server:
+To run the Prompt Share project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   
+   ```bash
+      git clone https://github.com/rahulo15/Prompt_Share
+   ```
+   
+2. Install dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+      cd Prompt_Share
+      npm install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Set up environment variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Create a .env file in the root directory and add the following environment variables:
 
-## Learn More
+   ```env
+      MONGODB_URI=your-mongodb-uri
+      GOOGLE_CLIENT_ID=your-google-client-id
+      GOOGLE_CLIENT_SECRET=your-google-client-secret
+      NEXTAUTH_URL=your-nextauth-url
+      NEXTAUTH_URL_INTERNAL=your-nextauth-url-internal
+      NEXTAUTH_SECRET=your-nextauth-secret
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server:
+   
+   ```bash
+      npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Open your browser and navigate to `http://localhost:3000` to access the Prompt Share application.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you'd like to contribute to Prompt Share, please open an issue or submit a pull request with your changes.
